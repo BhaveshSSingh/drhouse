@@ -674,11 +674,11 @@ export default function HealthMonitor() {
             Medical Condition
           </label>
           <input
-            type="text"
+            type="hidden"
             id="condition"
             name="condition"
             ref={conditionInputRef}
-            value={newPatient.condition}
+            value="empty"
             onChange={handlePatientInputChange}
             onFocus={() => setFocusedField('condition')}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
